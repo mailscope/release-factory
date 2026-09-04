@@ -395,7 +395,7 @@ require_literal \
     "golang.org/x/crypto=golang.org/x/crypto@v\${X_CRYPTO_VERSION}" \
     'the Caddy x/crypto security override'
 require_literal \
-    'https://codeload.github.com/deepseek-ai/deepseek-harness/tar.gz/refs/tags/dsh-v0.1.2-alpha.1' \
+    'https://codeload.github.com/deepseek-ai/deepseek-harness/tar.gz/refs/tags/dsh-v0.1.2-rc.1' \
     'the DeepSeek Harness source archive URL'
 require_literal \
     '"${DSH_SOURCE_ARCHIVE_SHA256}" /tmp/dsh-source.tar.gz | sha256sum -c -' \
