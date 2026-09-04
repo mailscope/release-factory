@@ -138,9 +138,9 @@ RUN python3 --version | grep -Fx "Python ${PYTHON_VERSION}" \
 
 FROM node:24.20.0-trixie-slim@sha256:50c3b2f6988dfc307b86e5301d69611af31f4789bdf232863b07d3b02fe55ae0 AS dsh-deps
 
-ARG DSH_VERSION=0.1.2-alpha.1
-ARG DSH_SOURCE_VERSION=0.1.2-alpha.1
-ARG DSH_SOURCE_REF=dsh-v0.1.2-alpha.1
+ARG DSH_VERSION=0.1.2-rc.1
+ARG DSH_SOURCE_VERSION=0.1.2-rc.1
+ARG DSH_SOURCE_REF=dsh-v0.1.2-rc.1
 ARG DSH_SOURCE_COMMIT=cd5ef8148158c3a752a658978873241fdf8e2bbc
 ARG DSH_SOURCE_ARCHIVE_SHA256=08aaf69a036d893fbc63a8feb59acd293c6970f7ccc4d77779243e8140fa359e
 ARG PYTHON_VERSION=3.12.14
@@ -148,7 +148,7 @@ ARG PYTEST_VERSION=9.1.1
 ARG PNPM_VERSION=11.24.0
 
 ADD --checksum=sha256:08aaf69a036d893fbc63a8feb59acd293c6970f7ccc4d77779243e8140fa359e \
-    https://codeload.github.com/deepseek-ai/deepseek-harness/tar.gz/refs/tags/dsh-v0.1.2-alpha.1 /tmp/dsh-source.tar.gz
+    https://codeload.github.com/deepseek-ai/deepseek-harness/tar.gz/refs/tags/dsh-v0.1.2-rc.1 /tmp/dsh-source.tar.gz
 
 ENV PYTHON=/usr/local/bin/python3
 
@@ -375,8 +375,8 @@ FROM node:24.20.0-trixie-slim@sha256:50c3b2f6988dfc307b86e5301d69611af31f4789bdf
 
 ARG CADDY_VERSION=2.11.4
 ARG CADDY_SECURITY_VERSION=1.1.64
-ARG DSH_VERSION=0.1.2-alpha.1
-ARG DSH_SOURCE_VERSION=0.1.2-alpha.1
+ARG DSH_VERSION=0.1.2-rc.1
+ARG DSH_SOURCE_VERSION=0.1.2-rc.1
 ARG PYTHON_VERSION=3.12.14
 ARG PNPM_VERSION=11.24.0
 
