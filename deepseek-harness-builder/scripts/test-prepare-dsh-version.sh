@@ -78,12 +78,12 @@ EOF
   if [[ "${with_source_metadata}" == true ]]; then
     cat > "${image_dir}/dsh-source.json" <<'EOF'
 {
-  "version": "0.1.2-alpha.1",
+  "version": "0.1.2-rc.1",
   "repository": "deepseek-ai/deepseek-harness",
-  "ref": "dsh-v0.1.2-alpha.1",
-  "commit": "cd5ef8148158c3a752a658978873241fdf8e2bbc",
-  "archiveSha256": "08aaf69a036d893fbc63a8feb59acd293c6970f7ccc4d77779243e8140fa359e",
-  "archiveUrl": "https://codeload.github.com/deepseek-ai/deepseek-harness/tar.gz/refs/tags/dsh-v0.1.2-alpha.1"
+  "ref": "dsh-v0.1.2-rc.1",
+  "commit": "a66e4702047846cdaa10c66c9d3df3951f5ea70d",
+  "archiveSha256": "576c0d86dfa34538384d70c57f87395e6e68a35d0c5dff03897991a2459d836a",
+  "archiveUrl": "https://codeload.github.com/deepseek-ai/deepseek-harness/tar.gz/refs/tags/dsh-v0.1.2-rc.1"
 }
 EOF
   fi
