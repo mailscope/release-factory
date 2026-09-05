@@ -147,7 +147,7 @@ ARG PYTHON_VERSION=3.12.14
 ARG PYTEST_VERSION=9.1.1
 ARG PNPM_VERSION=11.24.0
 
-ADD --checksum=sha256:08aaf69a036d893fbc63a8feb59acd293c6970f7ccc4d77779243e8140fa359e \
+ADD --checksum=sha256:576c0d86dfa34538384d70c57f87395e6e68a35d0c5dff03897991a2459d836a \
     https://codeload.github.com/deepseek-ai/deepseek-harness/tar.gz/refs/tags/dsh-v0.1.2-rc.1 /tmp/dsh-source.tar.gz
 
 ENV PYTHON=/usr/local/bin/python3
