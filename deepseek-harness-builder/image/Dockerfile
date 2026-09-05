@@ -177,7 +177,7 @@ RUN corepack enable \
     && corepack prepare "pnpm@${PNPM_VERSION}" --activate \
     && resolved_dsh_version="${DSH_VERSION:-${DSH_SOURCE_VERSION}}" \
     && test "${DSH_SOURCE_REF}" = "dsh-v${DSH_SOURCE_VERSION}" \
-    && test "${DSH_SOURCE_COMMIT}" = 'cd5ef8148158c3a752a658978873241fdf8e2bbc' \
+    && test "${DSH_SOURCE_COMMIT}" = 'a66e4702047846cdaa10c66c9d3df3951f5ea70d' \
     && printf '%s  %s\n' "${DSH_SOURCE_ARCHIVE_SHA256}" /tmp/dsh-source.tar.gz | sha256sum -c - \
     && if [ "${resolved_dsh_version}" = "${DSH_SOURCE_VERSION}" ]; then \
         mkdir -p /tmp/dsh-source \
